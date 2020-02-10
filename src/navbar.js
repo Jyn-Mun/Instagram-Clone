@@ -65,6 +65,11 @@ const Example = ({ loggedIn, setLoggedIn }) => {
 
   }
 
+  function loggedOut() {
+    setLoggedIn(!loggedIn)
+    localStorage.removeItem("jwt")
+  }
+
 
   return (
 
@@ -106,7 +111,7 @@ const Example = ({ loggedIn, setLoggedIn }) => {
 
         {!loggedIn ? (<button className="logInBtn" style={{ marginLeft: "1em" }} onClick={handleShow}>
           LOGIN
-      </button>) : (<button style={{ marginLeft: "1em", borderRadius: "10%", backgroundColor: "lavenderblush", color: "pink", border: "0" }} onClick={() => setLoggedIn(!loggedIn), localStorage.removeItem("jwt")} >Logged in</button>)}
+      </button>) : (<button style={{ marginLeft: "1em", borderRadius: "10%", backgroundColor: "lavenderblush", color: "pink", border: "0" }} onClick={() => setLoggedIn(!loggedIn)} >Logged in</button>)}
 
       </Navbar >
 
