@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: lightslategray;
+}
+
+.logInBtn {
+  background-color: pink;
+  color: white;
+  border: 2px white solid;
+}
+
+
+.logInBtn:hover {
+background-color: black;
+color: yellow;
+transform: scale(1.1);
+border: 5px double white;
+
+}
+
+.Nextagram:hover {
+  transform: scale(1.2);
+  font-weight: bold;;
+}
+
+.Homepage:hover {
+  transform: scale(1.1);
+  font-weight: bold;;
+}
+
+.About:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.Dropdown:hover {
+  transform: scale(1.1);
+  font-weight: bold;;
+}
+
+
